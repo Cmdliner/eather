@@ -5,7 +5,7 @@ import clsx from "clsx";
 import { Providers } from "@/app/providers";
 
 import { siteConfig } from "@/config/site";
-import Header from "@/components/Header/Navbar";
+
 
 export const metadata: Metadata = {
   title: {

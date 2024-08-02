@@ -8,11 +8,10 @@ import {
   NavbarItem,
 } from "@nextui-org/navbar";
 import { Button } from "@nextui-org/button";
-import { Link as UILink } from "@nextui-org/link";
 import Link from "next/link";
 import { useState } from "react"
-import DefaultMenu from "./NavMenu.tsx";
-import MenuSm from "./NavbarMenu.tsx";
+import DefaultMenu from "./NavMenu";
+import MenuSm from "./NavbarMenu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,10 +32,10 @@ const Header = () => {
     <DefaultMenu />
 	 <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
+          <Link href="/login">Login</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Button as={Link} color="primary" href="/register" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>
