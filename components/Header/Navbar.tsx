@@ -17,7 +17,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-<Navbar onMenuOpenChange={setIsMenuOpen} className="border border-red-800 p-2">
+<Navbar onMenuOpenChange={setIsMenuOpen} className="border p-2">
 	<NavbarContent>
 		<NavbarMenuToggle 
 			aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}

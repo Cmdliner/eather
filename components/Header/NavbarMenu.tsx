@@ -2,7 +2,7 @@ import { NavbarMenu, NavbarMenuItem } from "@nextui-org/navbar";
 import { Link } from "@nextui-org/link";
 const MenuSm = () => {
     
-    const menuItems = ['Home', 'Services', 'Results', 'Session'];
+    const menuItems = ['Home', 'New Appointment', 'Results'];
     return (
         <NavbarMenu>
             {menuItems.map((item, index) => (
