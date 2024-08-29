@@ -4,7 +4,7 @@ import { Input } from "@nextui-org/input";
 
 
 
-interface RegistrationFormProps {
+interface RegistrationFormProps  {
     handleSubmit: (e: FormEvent) => void;
 }
 

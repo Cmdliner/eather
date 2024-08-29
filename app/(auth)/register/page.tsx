@@ -6,18 +6,22 @@ import { FC, FormEvent, useState } from "react";
 import { ReactTyped } from "react-typed";
 import RegistrationForm from "@/components/Auth/RegistrationForm";
 
-
+interface IFormValues {
+    email: string;
+    password: string;
+    confirmPassword: string;
+}
 const Register: FC = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState('');
+    const [formValues, setFormValues] = useState<IFormValues>({email: '', password: '', confirmPassword: ''});
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
 
     function handleSignUp(e: FormEvent) {
+        const { email, password, confirmPassword } = formValues;
         e.preventDefault();
         console.log(`I ran, niggerrrr`);
+        
         if (password !== confirmPassword) {
             console.log('Ran into that error')
             setError('Passwords dont match!');
