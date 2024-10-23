@@ -45,8 +45,8 @@ const Register: FC = () => {
                 </h1>
                 {/* form goes here */}
                 <RegistrationForm handleSubmit={handleSignUp}/>
-                <div className="flex items-center">
-                    Already Signed up? Go to login{" "}
+                <div className="flex items-center justify-center border border-black">
+                    <div> Already Signed up? Go to login{" "} </div>
                     <Link href="/login" className="text-blue-800">
                         <LinkIcon />
                     </Link>
